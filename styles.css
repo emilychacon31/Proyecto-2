@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('http://fonts.cdnfonts.com/css/league-spartan');
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Montserrat', sans-serif;  
     color: aliceblue;
 }
-.titulo-principal{
-    font-size: 36px;
-    
+.logo{
+  display: flex;
+  align-items: center;
 }
+.logo-imagen{
+  height: 50px;
+  width: 50px;
+   
+}
+.logo h1{
+    font-size: 25px;
+    margin: 5px; 
+    font-family: 'League Spartan', sans-serif; 
+    color: #003f6a;  
+}
+.icono {
+  display: none;
+}
+
 .encabezado{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),
-    url();
+    url(header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,37 +39,513 @@
     padding: 2% 8%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    
 }
 .nav-lista{
     list-style-type: none;
     margin-top: 20px;
     
+    
 }
 .nav-elementos{
     display: inline;
     margin-left: 15px;
+   
 }
-.contenedor-servicios {
-    display: flex;
-  }
+.nav-elementos a.active{
+  padding: 30px 10px;
+  padding-top: 30px;
+  padding-bottom: 36px;
+  margin: 0;
+ background-color: #00406a;
+ color: white;
+}
+.nav-elementos a:hover:not(.active) {
+  background-color: #00406a88;
+  color: white;
+}
+.blog{
+  padding: 3px;
+  background-color: #ff731d;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #003f6a;
+
+}
+a:hover {
+  color: #096baf;
+  transition: 0.5s ease-in-out;
+}
+.contenido-header{
+  width: 50%;
+  position: relative;
+  top: 15%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.titulo-secundario{
+  font-size: 60px;
+  font-family: 'League Spartan', sans-serif; 
   
-.foto-servicio {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-  }
+}
+.btn{
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ff731d;
+  margin-top: 20px;
+  font-family: 'League Spartan', sans-serif; 
   
-.tarjeta-servicios {
-    width: 100%;
-  }
+}
+.contenedor-servicios{
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+.compraventa,
+.alquiler,
+.cesion,
+.asesoria {
+  flex-basis: 30%;
+  padding: 2rem;
+  align-items: center;
+}
+.nombre-servicio{
+  color: #096baf;
+  font-size: 25px;
+  text-align: center;
+}
+.imagen-servicio{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid blanchedalmond;
+  margin-left: 100px;
+}
+.parrafo{
+  color: black;
+  text-align: justify;
+  font-size: 15px;
+}
+
+
+.titulo-servicios{
+  padding:8px;
+  font-size: 30px;
+  color: white;
+  background-color: #eac74f;
+  font-family: 'League Spartan', sans-serif; 
+  text-align: center;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
+}
+.propiedades {
+  background: #003f6a;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  height: 550px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+a.btn {
+  background: #ffe053;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+.no-touch a.btn:hover {
+  background: #2073e0;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+.no-touch a.btn:active,
+a.btn:active {
+  background: #2073e0;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+div.cards {
+  margin: 80px auto;
+  max-width: 960px;
+  text-align: center;
+}
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 300px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 1;
   
-.servicios h3 {
+}
+.cards h3{
+  font-family:'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+
+
+}
+div.card img {
+  max-width: 300px;
+}
+div.card .card__image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
+}
+div.card div.card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+div.card div.card-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+div.card div.card-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+div.card div.card-title a.toggle-info span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+div.card div.card-title a.toggle-info span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+div.card div.card-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+div.card div.card-title h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: rgba(0, 0, 0, 0.678);
+}
+div.card div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+div.card div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+div.card div.card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+div.card div.flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+div.card div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+div.cards.showing div.card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
+}
+.no-touch div.cards.showing div.card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+div.card.show div.card-title a.toggle-info {
+  background: #ff6666 !important;
+}
+div.card.show div.card-title a.toggle-info span {
+  top: 15px;
+}
+div.card.show div.card-title a.toggle-info span.left {
+  right: 10px;
+}
+div.card.show div.card-title a.toggle-info span.right {
+  left: 10px;
+}
+div.card.show div.card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+div.card.show div.flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+div.card.show div.flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+.contenedor-acerca{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #eac74f;
+  padding-bottom: 20px;
+}
+.historia,
+.equipo-trabajo,
+.mision,
+.vision {
+  flex-basis: 30%;
+  padding: 2rem;
+}
+.titulos{
+  color: #096baf;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;;
+}
+.acerca{
+  color: black;
+  text-align: justify;
+  font-size: 15px;
+}
+.informacion{
+  font-size: 30px;
+}
+.imagen-acerca{
+  width: 100%;
+}
+.testimonios{
+  padding: 70px;
+}
+.contenedor-testimonios{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.testimonio-encabezado{
+  margin: 20px;
+}
+.imagen{
+  flex-basis: 10%;
+  padding: 2rem;
+  align-items: center;
+}
+.imagen-testimonio{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid #096baf;;
+  margin-left: 30px;
+}
+.t-testimonios{
+  font-size: 30px;
+  color: #096baf;
+}
+.parrafo-testimonio{
+  text-align: center;
+  color:black;
+  font-family:'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+
+}
+
+  @media only screen and (max-width: 768px) {
+    .icono {
+      display: block;
+      color:#ff731d ;
+      position: absolute;
+      right: 36px;
+      top: 26px;
+    }
+  
+    .barra-navegacion {
+      flex-direction: column;
+    }
+  
+    .barra-navegacion,
+    .nav-lista {
+      background-color: beige;
+      display: none;
+    }
+  
+    .mostrar {
+      display: block;
+    }
+  
+    .barra-navegacion, 
+    .nav-lista,
+    .nav-elementos {
+      display: block;
+      padding: 1% 0;
+    }
+  
+    .barra-navegacion .nav-lista .nav-elementos a {
+      color: black;
+    }
+    a.btn:hover{
+      display: none;
+    }
+  }
+  .footer-distributed {
+  background-color: #00406a;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(7, 59, 92);;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
     text-align: center;
   }
-  
-.servicios h4 {
-    text-align: center;
-    color: black;
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
   }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
